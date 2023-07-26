@@ -15,6 +15,7 @@ body {
 .contact-nav {
   background: #163651;
   padding: 3px;
+  width: 100%;
 }
 
 .contact-nav-list {
@@ -73,8 +74,9 @@ body {
 section {
   background-image: url("./images/bg.png");
   background-size: cover;
-  background-position: center;
-  height: 656px;
+  background-repeat: no-repeat;
+  background-position:center;
+  min-height: 656px;
 }
 
 .main-content {
@@ -84,6 +86,7 @@ section {
   gap: 40px;
   flex-wrap: wrap;
   padding: 8% 40px;
+  height: min-content;
 }
 
 .marketing-lines {
@@ -217,3 +220,52 @@ label {
   scale: 1.2;
 }
 
+/* -------------------------------footer---------------------------- */
+
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 368px;
+}
+
+.footer-div-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #40a5a2;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #FFF;
+}
+
+.footer-div-title{
+  font-size: 20px;
+font-style: normal;
+font-weight: 600;
+text-transform: capitalize;
+color: #163651;
+}
+
+.footer-div-para{
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px , 1fr));
+  justify-items: center;
+  gap: 30px;
+  padding: 96px 40px;
+}
