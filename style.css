@@ -13,9 +13,21 @@ body {
 /* ------------------- contact nav--------------------------- */
 
 .contact-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
   background: #163651;
-  padding: 3px;
+  padding: 10px 40px;
   width: 100%;
+}
+
+.social-link{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
 }
 
 .contact-nav-list {
@@ -23,7 +35,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 10px 40px;
   list-style: none;
 }
 
