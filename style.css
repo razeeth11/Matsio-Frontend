@@ -1,39 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 /* ------------------- contact nav--------------------------- */
 
-.contact-nav{
+.contact-nav {
   background: #163651;
-  padding: 5px;
+  padding: 3px;
 }
 
-ul{
+.contact-nav-list {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 10px 0 10px 40px;
+  padding: 10px 40px;
   list-style: none;
 }
 
-.material-symbols-outlined{
-  color: #40A5A2;  
+.material-symbols-outlined {
+  color: #40a5a2;
   font-size: 14px;
 }
 
-li a{
+.contact {
   display: flex;
   align-items: center;
   gap: 5px;
   text-decoration: none;
   font-size: 12px;
-  color:#F2EFE6
+  color: #f2efe6;
 }
+
+/* -------------------nav bar --------------------------- */
+
+.nav-bar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-bar-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bar-list li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.nav-bar-list a {
+  text-decoration: none;
+  color: #091520;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* -----------------main content----------------------------- */
+
+section {
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 656px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 8% 40px;
+}
+
+.marketing-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #fff;
+}
+
+.marketing-head {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  max-width: 560px;
+}
+
+.marketing-para {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 440px;
+  line-height: 150%;
+}
+
+.marketing-button {
+  background-color: #40a5a2;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  width: 128px;
+  cursor: pointer;
+}
+
+.marketing-button:hover {
+  background-color: #068682;
+}
+
+/* --------------------------------form apply--------------------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.name,
+.email,
+.pps-number {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+}
+
+input:focus{
+  outline: none;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.apply-form {
+  background: #fff;
+  width: 365px;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-title {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  color: #02274c;
+  line-height: 150%;
+}
+
+.check-box {
+  width: 20px;
+  height: 20px;
+}
+
+.tc {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.form-button button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 11px 24px;
+  background-color: #02274c;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-button .material-symbols-outlined{
+  color: #FFF;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.form-button button:hover{
+  background: #40a5a2;
+}
+
+.sub-button:hover .hello{
+  transform: rotate(360deg);
+  scale: 1.2;
+}
+

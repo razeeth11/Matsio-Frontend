@@ -12,28 +12,114 @@
     <title>Matsio | Frontend Developer</title>
   </head>
   <body>
+    <!-- ----------------------contact-nav-------------------------- -->
+
     <nav class="contact-nav">
-      <ul>
-        <li class="number">
-          <a href="#" class="contact">
-            <span class="material-symbols-outlined"> phone_in_talk</span>
-            <span>087 245 0049/ 01 8137811</span>
-          </a>
-        </li>
-        <li class="number">
-          <a href="#">
-            <span class="material-symbols-outlined">email</span>
-            <span>contact@sample.ie</span>
-          </a>
-        </li>
-        <li class="number">
-          <a href="#">
-            <span class="material-symbols-outlined">schedule</span>
-            <span>Mon-Thu: 8:00 am to 9:00 pm</span>
-          </a>
-        </li>
-      </ul>
+      <div class="contact-list">
+        <ul class="contact-nav-list">
+          <li class="number">
+            <a href="#" class="contact">
+              <span class="material-symbols-outlined"> phone_in_talk</span>
+              <span>087 245 0049/ 01 8137811</span>
+            </a>
+          </li>
+          <li class="number">
+            <a href="#" class="contact">
+              <span class="material-symbols-outlined">email</span>
+              <span>contact@sample.ie</span>
+            </a>
+          </li>
+          <li class="number">
+            <a href="#" class="contact">
+              <span class="material-symbols-outlined">schedule</span>
+              <span>Mon-Thu: 8:00 am to 9:00 pm</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <!-- ----------------------end of contact-nav-------------------------- -->
+
+    <!-- ----------------------nav-bar-------------------------- -->
+
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./images/group-5870.png" alt="logo.png" />
+      </div>
+      <div class="nav-list">
+        <ul class="nav-bar-list">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">services</a>
+          </li>
+          <li>
+            <a href="#">about us</a>
+          </li>
+          <li>
+            <a href="#">order company</a>
+          </li>
+          <li>
+            <a href="#">apply for tax rebate</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ----------------------end of nav-bar-------------------------- -->
+
+    <section>
+      <div class="main-content">
+        <div class="marketing-lines">
+          <h1 class="marketing-head">Take The Right Step For Your Business</h1>
+          <p class="marketing-para">
+            TAx Associate is a leading consultancy firm that provides simple,
+            effective company registration, and accounting solutions to
+            enterprises in Ireland.
+          </p>
+          <button type="button" class="marketing-button">Get Started</button>
+        </div>
+        <div class="apply-form">
+          <h2 class="form-title">Apply For Tax Rebate Now</h2>
+          <form action="#">
+            <div class="name">
+              <label for="name">Name</label>
+              <input name="name" type="text" />
+            </div>
+            <div class="email">
+              <label for="email">Email ID</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="pps-number">
+              <label for="pps-number">PPS Number</label>
+              <input type="text" name="pps-number" />
+            </div>
+            <div class="tc">
+              <input type="checkbox" class="check-box" />
+              <span
+                >I have read & agreed to the authorization and the
+                <a href="#"> terms & conditions. </a></span
+              >
+            </div>
+            <div class="form-button">
+              <button type="button" class="sub-button">
+                Apply<span class="material-symbols-outlined hello">
+                  arrow_circle_right
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <script src="./script.js"></script>
   </body>
