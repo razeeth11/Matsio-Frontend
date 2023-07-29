@@ -335,6 +335,15 @@ footer {
 
 
 
+/* ----------media query------------------- */
 
+@media screen and (max-width: 860px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
 
 }
